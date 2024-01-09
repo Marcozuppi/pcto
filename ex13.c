@@ -1,23 +1,23 @@
 #include <stdio.h>
-int main(){
-int somma;
-int numero;
-int media;
+int main() {
 
-if(numero>0){
-printf("INSERIRE UN NUMERO");
-scanf("%d" , &numero);
+float somma;
+float numero;
+float media;
+float i = 1;
 
-while(numero>0);{
-somma+=numero;
-numero--;
-}
-media = somma / numero;
+printf("INSERIRE UN NUMERO\n");
+scanf("%f" , &numero);
+somma = numero;
 
-printf("LA MEDIA DELLE SOMME È %d" , media);
+while(numero > 0){
+printf(" INSERIRE UN NUMERO\n");
+scanf("%f" , &numero);
+somma += numero;
+i++;
+media = somma / i;
+if(numero > 0 ){
+    printf("LA MEDIA È %f\n " , media);
 }
-else {
-    printf("ERROR\n");
 }
-return 0;
 }
